@@ -8,6 +8,6 @@ namespace JadooTravel.Services.CategoryServices
         Task CreateCategoryAsync(CreateCategoryDto createCategoryDto);
         Task UpdateCategoryAsync(UpdateCategoryDto updateCategoryDto);
         Task DeleteCategoryAsync(string id);
-        Task GetCategoryByIdAsync(string id);
+        Task<GetCategoryByIdDto> GetCategoryByIdAsync(string id);
     }
 }

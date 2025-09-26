@@ -8,7 +8,7 @@ namespace JadooTravel.Services.DestinationServices
         Task CreateDestinationAsync(CreateDestinationDto createDestinationDto);
         Task UpdateDestinationAsync(UpdateDestinationDto updateDestinationDto);
         Task DeleteDestinationAsync(string id);
-        Task GetDestinationByIdAsync(string id);
+        Task<GetDestinationByIdDto> GetDestinationByIdAsync(string id);
 
     }
 }
