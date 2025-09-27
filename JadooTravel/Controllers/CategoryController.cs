@@ -41,7 +41,7 @@ namespace JadooTravel.Controllers
         [HttpGet]
         public async Task<IActionResult> UpdateCategory(string id)
         {
-            var value = _categoryService.GetCategoryByIdAsync(id);
+            var value = await _categoryService.GetCategoryByIdAsync(id);
             return View(value);
         }
 
