@@ -17,9 +17,7 @@ namespace JadooTravel.Mapping
             CreateMap<Destination, ResultDestinationDto>().ReverseMap();
             CreateMap<Destination, CreateDestinationDto>().ReverseMap();
             CreateMap<Destination, UpdateDestinationDto>().ReverseMap();
-            CreateMap<Destination, GetCategoryByIdDto>().ReverseMap();
-
-
+            CreateMap<Destination, GetDestinationByIdDto>().ReverseMap();
         }
     }
 }
