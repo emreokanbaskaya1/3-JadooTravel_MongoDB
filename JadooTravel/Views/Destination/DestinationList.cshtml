@@ -1,6 +1,7 @@
 ﻿@model List<JadooTravel.Dtos.DestinationDtos.ResultDestinationDto>
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,8 +23,9 @@
 
         @foreach (var item in Model)
         {
+            count++;
             <tr>
-                <td>@item.DestinationId</td>
+                <td>@count</td>
                 <td>@item.CityCountry</td>
                 <td>@item.Price</td>
                 <td>@item.Capacity</td>
