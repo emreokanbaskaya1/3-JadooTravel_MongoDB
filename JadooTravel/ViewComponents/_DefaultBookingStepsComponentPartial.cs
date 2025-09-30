@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using JadooTravel.Services.TripPlanServices;
+using Microsoft.AspNetCore.Mvc;
 
 namespace JadooTravel.ViewComponents
 {
     public class _DefaultBookingStepsComponentPartial : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly ITripPlanService _tripPlanService;
+
+        public _DefaultBookingStepsComponentPartial(ITripPlanService tripPlanService)
         {
-            return View();
+            _tripPlanService = tripPlanService;
+        }
+
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+            var values = await _tripPlanService.GetAllTripPlanAsync();
+            return View(values);
         }
     }
 }
