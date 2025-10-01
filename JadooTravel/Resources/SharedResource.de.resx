@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <!-- Navigation -->
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="Destinations" xml:space="preserve">
+    <value>Reiseziele</value>
+  </data>
+  <data name="Hotels" xml:space="preserve">
+    <value>Hotels</value>
+  </data>
+  <data name="Flights" xml:space="preserve">
+    <value>Flüge</value>
+  </data>
+  <data name="Bookings" xml:space="preserve">
+    <value>Buchungen</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  
+  <!-- Hero Section -->
+  <data name="BestDestinations" xml:space="preserve">
+    <value>Beste Reiseziele</value>
+  </data>
+  <data name="TravelEnjoyAndLive" xml:space="preserve">
+    <value>Reisen Sie, Genießen Sie Und Leben Sie Ein Neues Leben</value>
+  </data>
+  <data name="HeroDescription" xml:space="preserve">
+    <value>Erleben Sie unvergessliche Abenteuer an den besten Reisezielen der Welt. Lassen Sie uns Ihnen helfen, Ihren perfekten Urlaub zu planen.</value>
+  </data>
+  <data name="FindOutMore" xml:space="preserve">
+    <value>Mehr Erfahren</value>
+  </data>
+  <data name="PlayDemo" xml:space="preserve">
+    <value>Demo Abspielen</value>
+  </data>
+  
+  <!-- Category Section -->
+  <data name="Category" xml:space="preserve">
+    <value>Kategorie</value>
+  </data>
+  <data name="WeOffer" xml:space="preserve">
+    <value>Wir Bieten</value>
+  </data>
+  <data name="BestServices" xml:space="preserve">
+    <value>Beste Dienstleistungen</value>
+  </data>
+  
+  <!-- Destination Section -->
+  <data name="TopSelling" xml:space="preserve">
+    <value>Meistverkauft</value>
+  </data>
+  <data name="TopDestinations" xml:space="preserve">
+    <value>Top Reiseziele</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Tage</value>
+  </data>
+  
+  <!-- Booking Steps -->
+  <data name="EasyAndFast" xml:space="preserve">
+    <value>Einfach und Schnell</value>
+  </data>
+  <data name="BookYourNextTrip" xml:space="preserve">
+    <value>Buchen Sie Ihre Nächste Reise In 3 Einfachen Schritten</value>
+  </data>
+  <data name="ChooseDestination" xml:space="preserve">
+    <value>Reiseziel Wählen</value>
+  </data>
+  <data name="ChooseDestinationDesc" xml:space="preserve">
+    <value>Wählen Sie Ihr gewünschtes Reiseziel und wählen Sie Ihre Daten</value>
+  </data>
+  <data name="MakePayment" xml:space="preserve">
+    <value>Zahlung Durchführen</value>
+  </data>
+  <data name="MakePaymentDesc" xml:space="preserve">
+    <value>Schließen Sie Ihre Buchung mit sicheren Zahlungsmethoden ab</value>
+  </data>
+  <data name="ReachAirport" xml:space="preserve">
+    <value>Flughafen Erreichen</value>
+  </data>
+  <data name="ReachAirportDesc" xml:space="preserve">
+    <value>Kommen Sie rechtzeitig am Flughafen an und beginnen Sie Ihre Reise</value>
+  </data>
+  
+  <!-- Testimonial Section -->
+  <data name="Testimonials" xml:space="preserve">
+    <value>Referenzen</value>
+  </data>
+  <data name="WhatPeopleSay" xml:space="preserve">
+    <value>Was Die Leute Über Uns Sagen</value>
+  </data>
+  
+  <!-- Footer -->
+  <data name="Company" xml:space="preserve">
+    <value>Unternehmen</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>Über Uns</value>
+  </data>
+  <data name="Careers" xml:space="preserve">
+    <value>Karriere</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobil</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="HelpFAQ" xml:space="preserve">
+    <value>Hilfe/FAQ</value>
+  </data>
+  <data name="Press" xml:space="preserve">
+    <value>Presse</value>
+  </data>
+  <data name="Affiliates" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Mehr</value>
+  </data>
+  <data name="AirlineFees" xml:space="preserve">
+    <value>Fluggebühren</value>
+  </data>
+  <data name="Airline" xml:space="preserve">
+    <value>Fluggesellschaft</value>
+  </data>
+  <data name="LowFareTips" xml:space="preserve">
+    <value>Günstige Tarife Tipps</value>
+  </data>
+  <data name="DiscoverOurApp" xml:space="preserve">
+    <value>Entdecken Sie Unsere App</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>Alle Rechte vorbehalten</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Abonnieren</value>
+  </data>
+  <data name="SubscribeMessage" xml:space="preserve">
+    <value>Abonnieren Sie, um Informationen, neueste Nachrichten und andere interessante Angebote über Jadoo zu erhalten</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Ihre E-Mail</value>
+  </data>
+  <data name="BookTrip" xml:space="preserve">
+    <value>Buchen Sie Ihre Reise in Minuten, haben Sie viel länger die volle Kontrolle.</value>
+  </data>
+  
+  <!-- Dashboard -->
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Willkommen</value>
+  </data>
+</root>
+

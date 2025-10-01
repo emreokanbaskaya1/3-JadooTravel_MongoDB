@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <!-- Navigation -->
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Destinations" xml:space="preserve">
+    <value>Destinations</value>
+  </data>
+  <data name="Hotels" xml:space="preserve">
+    <value>Hotels</value>
+  </data>
+  <data name="Flights" xml:space="preserve">
+    <value>Flights</value>
+  </data>
+  <data name="Bookings" xml:space="preserve">
+    <value>Bookings</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  
+  <!-- Hero Section -->
+  <data name="BestDestinations" xml:space="preserve">
+    <value>Best Destinations</value>
+  </data>
+  <data name="TravelEnjoyAndLive" xml:space="preserve">
+    <value>Travel, Enjoy And Live A New And Full Life</value>
+  </data>
+  <data name="HeroDescription" xml:space="preserve">
+    <value>Experience unforgettable adventures at the world's best destinations. Let us help you plan your perfect vacation.</value>
+  </data>
+  <data name="FindOutMore" xml:space="preserve">
+    <value>Find Out More</value>
+  </data>
+  <data name="PlayDemo" xml:space="preserve">
+    <value>Play Demo</value>
+  </data>
+  
+  <!-- Category Section -->
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="WeOffer" xml:space="preserve">
+    <value>We Offer</value>
+  </data>
+  <data name="BestServices" xml:space="preserve">
+    <value>Best Services</value>
+  </data>
+  
+  <!-- Destination Section -->
+  <data name="TopSelling" xml:space="preserve">
+    <value>Top Selling</value>
+  </data>
+  <data name="TopDestinations" xml:space="preserve">
+    <value>Top Destinations</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  
+  <!-- Booking Steps -->
+  <data name="EasyAndFast" xml:space="preserve">
+    <value>Easy and Fast</value>
+  </data>
+  <data name="BookYourNextTrip" xml:space="preserve">
+    <value>Book Your Next Trip In 3 Easy Steps</value>
+  </data>
+  <data name="ChooseDestination" xml:space="preserve">
+    <value>Choose Destination</value>
+  </data>
+  <data name="ChooseDestinationDesc" xml:space="preserve">
+    <value>Choose your desired destination and select your dates</value>
+  </data>
+  <data name="MakePayment" xml:space="preserve">
+    <value>Make Payment</value>
+  </data>
+  <data name="MakePaymentDesc" xml:space="preserve">
+    <value>Complete your booking with secure payment methods</value>
+  </data>
+  <data name="ReachAirport" xml:space="preserve">
+    <value>Reach Airport</value>
+  </data>
+  <data name="ReachAirportDesc" xml:space="preserve">
+    <value>Arrive at the airport on time and start your journey</value>
+  </data>
+  
+  <!-- Testimonial Section -->
+  <data name="Testimonials" xml:space="preserve">
+    <value>Testimonials</value>
+  </data>
+  <data name="WhatPeopleSay" xml:space="preserve">
+    <value>What People Say About Us</value>
+  </data>
+  
+  <!-- Footer -->
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Careers" xml:space="preserve">
+    <value>Careers</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="HelpFAQ" xml:space="preserve">
+    <value>Help/FAQ</value>
+  </data>
+  <data name="Press" xml:space="preserve">
+    <value>Press</value>
+  </data>
+  <data name="Affiliates" xml:space="preserve">
+    <value>Affiliates</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="AirlineFees" xml:space="preserve">
+    <value>Airline Fees</value>
+  </data>
+  <data name="Airline" xml:space="preserve">
+    <value>Airline</value>
+  </data>
+  <data name="LowFareTips" xml:space="preserve">
+    <value>Low Fare Tips</value>
+  </data>
+  <data name="DiscoverOurApp" xml:space="preserve">
+    <value>Discover Our App</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>All rights reserved</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscribeMessage" xml:space="preserve">
+    <value>Subscribe to get information, latest news and other interesting offers about Jadoo</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your email</value>
+  </data>
+  <data name="BookTrip" xml:space="preserve">
+    <value>Book your trip in minute, get full control for much longer.</value>
+  </data>
+  
+  <!-- Dashboard -->
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+</root>
+
