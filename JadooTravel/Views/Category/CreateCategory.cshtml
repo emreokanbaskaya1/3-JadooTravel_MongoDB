@@ -13,11 +13,12 @@
     <form method="post">
         <input type="text" asp-for="CategoryName" placeholder="Enter Category Name" class="form-control" />
         <br />
-        <input type="text" asp-for="Description" placeholder="Enter Category Name" class="form-control" />
+        <input type="text" asp-for="Description" placeholder="Enter Description" class="form-control" />
         <br />
-        <input type="text" asp-for="IconUrl" placeholder="Enter Category Name" class="form-control" />
+        <input type="text" asp-for="IconUrl" placeholder="Enter Icon URL" class="form-control" />
         <br />
-        <input type="text" asp-for="Status" placeholder="Enter Category Name" class="form-control" />
+        <input type="checkbox" asp-for="Status" class="form-check-input" />
+        <label asp-for="Status" class="form-check-label">Status</label>
         <br />
         <button class="btn btn-primary">Add Category</button>
     </form>

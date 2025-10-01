@@ -7,8 +7,6 @@ using JadooTravel.Services.TripPlanServices;
 using JadooTravel.Settings;
 using Microsoft.Extensions.Options;
 using System.Reflection;
-using System.Globalization;
-using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,34 +25,7 @@ builder.Services.AddScoped<IDatabaseSettings>(sp =>
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
 
-// Localization (Dil Desteği) Yapılandırması
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-
-builder.Services.AddControllersWithViews()
-    .AddViewLocalization()
-    .AddDataAnnotationsLocalization();
-
-// Desteklenen Dilleri Tanımla
-var supportedCultures = new[]
-{
-    new CultureInfo("tr"), // Türkçe
-    new CultureInfo("en"), // İngilizce
-    new CultureInfo("de"), // Almanca
-    new CultureInfo("fr")  // Fransızca
-};
-
-builder.Services.Configure<RequestLocalizationOptions>(options =>
-{
-    options.DefaultRequestCulture = new RequestCulture("tr"); // Varsayılan dil: Türkçe
-    options.SupportedCultures = supportedCultures;
-    options.SupportedUICultures = supportedCultures;
-    
-    // Cookie ile dil bilgisini sakla
-    options.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider
-    {
-        CookieName = "JadooTravelLanguage"
-    });
-});
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
@@ -67,10 +38,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// Localization Middleware'ini Ekle (Routing'den önce olmalı)
-app.UseRequestLocalization();
-
 app.UseRouting();
 
 app.UseAuthorization();

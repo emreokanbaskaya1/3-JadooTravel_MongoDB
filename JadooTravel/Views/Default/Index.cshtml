@@ -1,9 +1,4 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-@using JadooTravel.Resources
-@inject IViewLocalizer Localizer
-@inject IHtmlLocalizer<SharedResource> SharedLocalizer
-
-@{
+﻿@{
     Layout = null;
 }
 
@@ -102,15 +97,15 @@
                     <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img src="/public/assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-10">
-                            <h2 class="text-secondary lh-1-7 mb-7">@SharedLocalizer["SubscribeMessage"]</h2>
+                            <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other interesting offers about Cobham</h2>
                             <form class="row g-3 align-items-center w-lg-75 mx-auto">
                                 <div class="col-sm">
                                     <div class="input-group-icon">
-                                        <input class="form-control form-little-squirrel-control" type="email" placeholder="@SharedLocalizer["YourEmail"]" aria-label="email" /><img class="input-box-icon" src="/public/assets/img/cta/mail.svg" width="17" alt="mail" />
+                                        <input class="form-control form-little-squirrel-control" type="email" placeholder="Your email" aria-label="email" /><img class="input-box-icon" src="/public/assets/img/cta/mail.svg" width="17" alt="mail" />
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
-                                    <button class="btn btn-danger orange-gradient-btn fs--1">@SharedLocalizer["Subscribe"]</button>
+                                    <button class="btn btn-danger orange-gradient-btn fs--1">Subscribe</button>
                                 </div>
                             </form>
                         </div>
@@ -128,35 +123,35 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
                         <img class="mb-4" src="/public/assets/img/logo2.svg" width="150" alt="jadoo" />
-                        <p class="fs--1 text-secondary mb-0 fw-medium">@SharedLocalizer["BookTrip"]</p>
+                        <p class="fs--1 text-secondary mb-0 fw-medium">Book your trip in minute, get full Control for much longer.</p>
                     </div>
                     <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
-                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">@SharedLocalizer["Company"]</h4>
+                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
                         <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["About"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["Careers"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["Mobile"]</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">About</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Careers</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Mobile</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
-                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">@SharedLocalizer["Contact"]</h4>
+                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contact</h4>
                         <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["HelpFAQ"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["Press"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["Affiliates"]</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Help/FAQ</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Press</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Affilates</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
-                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">@SharedLocalizer["More"]</h4>
+                        <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">More</h4>
                         <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["AirlineFees"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["Airline"]</a></li>
-                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">@SharedLocalizer["LowFareTips"]</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airlinefees</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Airline</a></li>
+                            <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Low fare tips</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
                         <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
-                        <h4 class="fw-medium font-sans-serif text-secondary mb-3">@SharedLocalizer["DiscoverOurApp"]</h4>
+                        <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
                         <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="/public/assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="/public/assets/img/apple-store.png" alt="apple store" /></a></div>
                     </div>
                 </div>
@@ -179,19 +174,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="/public/vendors/fontawesome/all.min.js"></script>
     <script src="/public/assets/js/theme.js"></script>
-
-    <!-- Language Change Script -->
-    <script>
-        function changeLanguage(culture) {
-            console.log('Changing language to: ' + culture);
-            
-            // Cookie'ye dil bilgisini kaydet
-            document.cookie = ".AspNetCore.Culture=c=" + culture + "|uic=" + culture + "; path=/; max-age=31536000";
-            
-            // Sayfayı yenile
-            window.location.reload();
-        }
-    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
 </body>

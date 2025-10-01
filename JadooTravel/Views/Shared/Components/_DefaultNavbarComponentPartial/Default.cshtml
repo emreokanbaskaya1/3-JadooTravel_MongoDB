@@ -1,27 +1,6 @@
-﻿@using Microsoft.AspNetCore.Localization
-@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer Localizer
-
-@{
-    var requestCultureFeature = Context.Features.Get<IRequestCultureFeature>();
-    var currentCulture = requestCultureFeature?.RequestCulture.Culture.TwoLetterISOLanguageName ?? "tr";
-    
-    var languageNames = new Dictionary<string, string>
-    {
-        { "tr", "Türkçe" },
-        { "en", "English" },
-        { "de", "Deutsch" },
-        { "fr", "Français" }
-    };
-    
-    var languageFlags = new Dictionary<string, string>
-    {
-        { "tr", "🇹🇷" },
-        { "en", "🇺🇸" },
-        { "de", "🇩🇪" },
-        { "fr", "🇫🇷" }
-    };
-}
+﻿@*
+   Navbar Component
+*@
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
     <div class="container">
@@ -29,28 +8,22 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">@Localizer["Category"]</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">@Localizer["Destinations"]</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">@Localizer["Bookings"]</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">@Localizer["Testimonials"]</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">@Localizer["Login"]</a></li>
-                <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">@Localizer["SignUp"]</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Feature</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Destination</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Reservation</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#testimonial">Reviews</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Login</a></li>
+                <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Sign Up</a></li>
                 <li class="nav-item dropdown px-3 px-lg-0">
                     <a class="d-inline-block ps-0 py-2 pe-3 text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        @Localizer["Language"]
-                        <span class="badge bg-secondary ms-1">@currentCulture.ToUpper()</span>
+                        Language 
+                        <span class="badge bg-secondary ms-1">EN</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" style="border-radius:0.3rem;" aria-labelledby="navbarDropdown">
-                        @foreach (var lang in languageNames)
-                        {
-                            <li>
-                                <a class="dropdown-item @(currentCulture == lang.Key ? "active fw-bold" : "")" 
-                                   href="javascript:void(0)" 
-                                   onclick="changeLanguage('@lang.Key')">
-                                    @languageFlags[lang.Key] @lang.Value
-                                </a>
-                            </li>
-                        }
+                        <li><a class="dropdown-item active fw-bold" href="javascript:void(0)">🇺🇸 English</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)">🇹🇷 Turkish</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)">🇪🇸 Spanish</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)">🇫🇷 French</a></li>
                     </ul>
                 </li>
             </ul>
