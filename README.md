@@ -80,71 +80,6 @@ Her varlık için interface ve implementation çifti:
 - `ITestimonialService` / `TestimonialService`
 - `ITripPlanService` / `TripPlanService`
 
-## 🚀 Kurulum
-
-### Gereksinimler
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [MongoDB](https://www.mongodb.com/try/download/community) (v3.5 veya üzeri)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) veya [Visual Studio Code](https://code.visualstudio.com/)
-- OpenAI API Key (AI özellikleri için)
-
-### Adım 1: Projeyi Klonlayın
-```bash
-git clone <repository-url>
-cd "3)JadooTravel"
-```
-
-### Adım 2: MongoDB'yi Başlatın
-MongoDB servisinin çalıştığından emin olun:
-```bash
-# Windows
-net start MongoDB
-
-# macOS/Linux
-sudo systemctl start mongod
-```
-
-### Adım 3: Bağımlılıkları Yükleyin
-```bash
-cd JadooTravel
-dotnet restore
-```
-
-### Adım 4: Projeyi Derleyin
-```bash
-dotnet build
-```
-
-### Adım 5: Uygulamayı Çalıştırın
-```bash
-dotnet run
-```
-
-Uygulama varsayılan olarak `https://localhost:5001` adresinde çalışacaktır.
-
-## ⚙ Yapılandırma
-
-### appsettings.json
-`JadooTravel/appsettings.json` dosyasını düzenleyin:
-
-```json
-{
-  "DatabaseSettingsKey": {
-    "ConnectionString": "mongodb://localhost:27017",
-    "Database": "JadooTravelDb",
-    "CategoryCollectionName": "Categories",
-    "DestinationCollectionName": "Destinations",
-    "FeatureCollectionName": "Features",
-    "TripPlanCollectionName": "TripPlans",
-    "ReservationCollectionName": "Reservations",
-    "TestimonialCollectionName": "Testimonials"
-  },
-  "OpenAI": {
-    "ApiKey": "your-openai-api-key-here"
-  }
-}
-```
-
 ### MongoDB Koleksiyonları
 Uygulama ilk çalıştırıldığında otomatik olarak gerekli koleksiyonları oluşturacaktır:
 - Categories
@@ -229,35 +164,9 @@ Uygulama ilk çalıştırıldığında otomatik olarak gerekli koleksiyonları o
 
 Proje modern ve responsive bir kullanıcı arayüzüne sahiptir. Spike Bootstrap teması kullanılmıştır.
 
-## 🔒 Güvenlik Notları
 
-⚠️ **ÖNEMLİ**: Bu proje eğitim amaçlıdır. Production ortamında kullanmadan önce:
+https://github.com/user-attachments/assets/1bfa4e17-cbb3-4500-921d-f588f783159f
 
-1. **API Anahtarlarını Gizleyin**: 
-   - `appsettings.json` dosyasındaki OpenAI API anahtarını environment variable'a taşıyın
-   - API anahtarlarını asla GitHub'a yüklemeyin
-   
-2. **Environment Variables Kullanın**:
-   ```bash
-   # Örnek
-   export OpenAI__ApiKey="your-api-key"
-   ```
-
-3. **appsettings.json'ı .gitignore'a Ekleyin**:
-   ```
-   appsettings.json
-   appsettings.Development.json
-   ```
-
-4. **Güvenli Bağlantı**: MongoDB connection string'ini güvenceye alın
-
-## 🤝 Katkıda Bulunma
-
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
 
 ## 📝 Lisans
 
@@ -268,19 +177,6 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE.txt](
 ## 👨‍💻 Geliştirici
 
 **Emre Okan Baskaya**
-
----
-
-## 🎓 Bootcamp Projesi
-
-Bu proje, C# Bootcamp programının 3. projesidir ve aşağıdaki konuları kapsamaktadır:
-- ASP.NET Core MVC
-- MongoDB ile NoSQL veritabanı işlemleri
-- Repository & Service Pattern
-- AutoMapper kullanımı
-- OpenAI API entegrasyonu
-- Modern web tasarımı
-- ViewComponent kullanımı
 
 ---
 
