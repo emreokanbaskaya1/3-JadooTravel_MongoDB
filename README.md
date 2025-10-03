@@ -160,7 +160,7 @@ Uygulama ilk çalıştırıldığında otomatik olarak gerekli koleksiyonları o
 - `_DefaultNavbarComponentPartial`: Navigasyon menüsü
 - `_DefaultTestimonialComponentPartial`: Müşteri yorumları
 
-## 🖼 Ekran Görüntüleri
+## 🖼 Projeyle alakalı video:
 
 Proje modern ve responsive bir kullanıcı arayüzüne sahiptir. Spike Bootstrap teması kullanılmıştır.
 
@@ -181,3 +181,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE.txt](
 ---
 
 **⭐ Bu projeyi faydalı bulduysan, yıldız vermeyi unutma!**
+
