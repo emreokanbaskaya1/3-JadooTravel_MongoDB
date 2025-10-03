@@ -79,71 +79,6 @@ Interface and implementation pair for each entity:
 - `ITestimonialService` / `TestimonialService`
 - `ITripPlanService` / `TripPlanService`
 
-## 🚀 Installation
-
-### Requirements
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [MongoDB](https://www.mongodb.com/try/download/community) (v3.5 or higher)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
-- OpenAI API Key (for AI features)
-
-### Step 1: Clone the Project
-```bash
-git clone <repository-url>
-cd "3)JadooTravel"
-```
-
-### Step 2: Start MongoDB
-Make sure MongoDB service is running:
-```bash
-# Windows
-net start MongoDB
-
-# macOS/Linux
-sudo systemctl start mongod
-```
-
-### Step 3: Install Dependencies
-```bash
-cd JadooTravel
-dotnet restore
-```
-
-### Step 4: Build the Project
-```bash
-dotnet build
-```
-
-### Step 5: Run the Application
-```bash
-dotnet run
-```
-
-The application will run on `https://localhost:5001` by default.
-
-## ⚙ Configuration
-
-### appsettings.json
-Edit the `JadooTravel/appsettings.json` file:
-
-```json
-{
-  "DatabaseSettingsKey": {
-    "ConnectionString": "mongodb://localhost:27017",
-    "Database": "JadooTravelDb",
-    "CategoryCollectionName": "Categories",
-    "DestinationCollectionName": "Destinations",
-    "FeatureCollectionName": "Features",
-    "TripPlanCollectionName": "TripPlans",
-    "ReservationCollectionName": "Reservations",
-    "TestimonialCollectionName": "Testimonials"
-  },
-  "OpenAI": {
-    "ApiKey": "your-openai-api-key-here"
-  }
-}
-```
-
 ### MongoDB Collections
 The application will automatically create the required collections on first run:
 - Categories
@@ -152,12 +87,6 @@ The application will automatically create the required collections on first run:
 - TripPlans
 - Reservations
 - Testimonials
-
-## 📖 Usage
-
-### Home Page
-- Homepage: `http://localhost:5001/`
-- Dashboard: `http://localhost:5001/Dashboard`
 
 ### Admin Panel
 1. **Category Management**: `/Category/CategoryList`
@@ -229,38 +158,10 @@ You can get OpenAI-powered travel recommendations by entering a city name from t
 The project has a modern and responsive user interface. The Spike Bootstrap theme is used.
 
 
-https://github.com/user-attachments/assets/1bfa4e17-cbb3-4500-921d-f588f783159f
+https://github.com/user-attachments/assets/287b3b10-5a6b-4a66-89ab-da5e6298dbc5
 
 
-## 🔒 Security Notes
 
-⚠️ **IMPORTANT**: This project is for educational purposes. Before using in production:
-
-1. **Hide API Keys**: 
-   - Move the OpenAI API key from `appsettings.json` to environment variables
-   - Never upload API keys to GitHub
-   
-2. **Use Environment Variables**:
-   ```bash
-   # Example
-   export OpenAI__ApiKey="your-api-key"
-   ```
-
-3. **Add appsettings.json to .gitignore**:
-   ```
-   appsettings.json
-   appsettings.Development.json
-   ```
-
-4. **Secure Connection**: Secure your MongoDB connection string
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 License
 
@@ -268,24 +169,5 @@ This project is licensed under the MIT License. See the [LICENSE.txt](LICENSE.tx
 
 **Copyright (c) 2025 Emre Okan Baskaya**
 
-## 👨‍💻 Developer
 
-**Emre Okan Baskaya**
-
----
-
-## 🎓 Bootcamp Project
-
-This is the 3rd project of the C# Bootcamp program and covers the following topics:
-- ASP.NET Core MVC
-- NoSQL database operations with MongoDB
-- Repository & Service Pattern
-- AutoMapper usage
-- OpenAI API integration
-- Modern web design
-- ViewComponent usage
-
----
-
-**⭐ If you found this project useful, don't forget to star it!**
 
